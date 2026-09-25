@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6f6">
+  <title>Crear tarea · Flowcus</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="app-page create-page">
+  <main class="mobile-screen mobile-detail">
+    <div class="mobile-detail-content">
+      <section class="mobile-detail-card">
+        <div class="mobile-detail-status"><span>ESTADO</span><strong>● &nbsp;ESTADO / LISTO PARA FLOWCUS</strong></div>
+        <h1 id="mobile-detail-title">TAREA 1</h1>
+        <p>fecha/hora creación</p>
+        <div class="mobile-detail-tags"><span>PRIORIDAD</span><b id="mobile-detail-priority">ALTA</b><em id="mobile-detail-category">BACKEND</em></div>
+      </section>
+      <section class="mobile-estimate"><span class="mobile-clock" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 3"/></svg></span><div><small>ESTIMACIÓN POMODORO</small><strong id="mobile-detail-estimate">X CICLOS (XX MIN ENFOQUE + XX MIN DESCANSO)</strong></div><b id="mobile-detail-minutes">X×XXM</b></section>
+      <section class="mobile-notes"><h2>DESCRIPCIÓN Y NOTAS</h2><p id="mobile-detail-description">Revisar y documentar los endpoints pendientes del módulo de autenticación antes de la entrega del sprint. Confirmar que los casos de error estén cubiertos.</p><p class="mobile-note">Nota: Priorizar este bloque en la mañana, cuando el nivel de concentración suele ser más alto.</p></section>
+      <section class="mobile-detail-checklist"><h2>SUBTAREAS</h2><label><input type="checkbox"> Revisar endpoints pendientes</label><label><input type="checkbox"> Documentar casos de error</label></section>
+    </div>
+    <footer class="mobile-detail-footer"><button class="mobile-use-task" id="mobile-use-task" type="button">▷ &nbsp;USAR EN FLOWCUS</button><button class="mobile-edit-task" id="mobile-edit-task" type="button">EDITAR TAREA</button></footer>
+    <dialog class="mobile-edit-dialog" id="mobile-edit-dialog"><form method="dialog" id="mobile-edit-form"><h2>EDITAR TAREA</h2><label>Título<input id="mobile-edit-title" maxlength="120" required></label><label>Descripción<textarea id="mobile-edit-description"></textarea></label><div><button type="button" id="mobile-edit-cancel">Cancelar</button><button type="submit">Guardar</button></div></form></dialog>
+  </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6f6">
+  <title>Gestión de tareas · Flowcus</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="app-page task-page">
+  <main class="mobile-screen mobile-dashboard">
+    <header class="mobile-dashboard-heading"><span>INICIO</span><h1>BIENVENIDO DE NUEVO</h1></header>
+    <label class="mobile-search"><span class="sr-only">Buscar tarea</span><input id="mobile-task-search" type="search" placeholder="Buscar tarea..."></label>
+    <div class="mobile-tabs" role="tablist" aria-label="Filtrar tareas">
+      <button class="active" type="button" data-mobile-filter="all">Todas <span>(4)</span></button>
+      <button type="button" data-mobile-filter="active">En curso <span>(1)</span></button>
+      <button type="button" data-mobile-filter="done">Completadas <span>(1)</span></button>
+    </div>
+    <div class="mobile-task-list" id="mobile-task-list">
+      <article class="mobile-task-card" data-title="TAREA 1" data-status="ready"><input type="checkbox" aria-label="Completar tarea 1"><a href="crear-tarea.html?task=1"><strong>TAREA 1</strong><span>Estimado:</span><small>X CICLO <b class="high">ALTA</b></small></a></article>
+      <article class="mobile-task-card" data-title="TAREA 2" data-status="active"><input type="checkbox" aria-label="Completar tarea 2"><a href="crear-tarea.html?task=2"><strong>TAREA 2</strong><span>Estimado:</span><small>X CICLO <b class="medium">MEDIA</b></small></a></article>
+      <article class="mobile-task-card" data-title="TAREA 3" data-status="ready"><input type="checkbox" aria-label="Completar tarea 3"><a href="crear-tarea.html?task=3"><strong>TAREA 3</strong><span>Estimado:</span><small>1 CICLO <b class="high">ALTA</b></small></a></article>
+      <article class="mobile-task-card is-done" data-title="TAREA 4" data-status="done"><input type="checkbox" aria-label="Completar tarea 4" checked><a href="crear-tarea.html?task=4"><strong>TAREA 4</strong><span>Estimado:</span><small>1 CICLO <b class="medium">MEDIA</b></small></a><span class="mobile-card-menu" aria-hidden="true">•••</span></article>
+    </div>
+    <footer class="mobile-dashboard-footer">
+      <a class="mobile-start-button" href="crear-tarea.html?task=1"><span aria-hidden="true">＋</span> INICIAR FLOWCUS</a>
+      <nav class="mobile-bottom-nav" aria-label="Navegación móvil">
+        <a class="active" href="tareas.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8M5 10v11h14V10M10 21v-7h4v7"/></svg><span>Flowcus</span></a>
+        <a href="tareas.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2m-6 9 2 2 4-4"/></svg><span>TAREAS</span></a>
+        <button type="button" id="mobile-history"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 5v7l5 3"/></svg><span>Historial</span></button>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>

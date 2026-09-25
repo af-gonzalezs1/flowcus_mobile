@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f7">
+  <title>Crear cuenta</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="signup">
+    <header class="intro">
+      <h1>CREAR CUENTA</h1>
+      <p>Ingresa tus datos para comenzar tu gestión de flowcus y tareas.</p>
+    </header>
+
+    <form class="signup-form" id="signup-form" novalidate>
+      <label class="field" for="name">
+        <span class="field-label">NOMBRE COMPLETO</span>
+        <span class="field-control"><svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2z"/></svg>
+        <input id="name" name="name" type="text" value="Juan Pérez" placeholder="Nombre completo" autocomplete="name" required></span>
+      </label>
+      <label class="field" for="email">
+        <span class="field-label">CORREO ELECTRÓNICO</span>
+        <span class="field-control"><svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 7 8 6 8-6"/></svg>
+        <input id="email" name="email" type="email" value="usuario@ejemplo.com" placeholder="Correo electrónico" autocomplete="email" required></span>
+      </label>
+      <div class="password-group">
+        <label class="field" for="password">
+          <span class="field-label">CONTRASEÑA</span>
+          <span class="field-control"><svg class="field-icon lock-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="12" rx="1.5"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></svg>
+          <input id="password" name="password" type="password" value="Clave123!" placeholder="Contraseña" autocomplete="new-password" minlength="8" required>
+          <button class="toggle-password" type="button" aria-label="Mostrar contraseña" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button></span>
+        </label>
+        <p class="hint" id="password-hint">Usa al menos 8 caracteres con números y símbolos.</p>
+      </div>
+
+      <label class="terms" for="terms">
+        <input id="terms" name="terms" type="checkbox" checked required>
+        <span>Acepto los <a href="#terminos">Términos de Servicio</a> y la <a class="muted-link" href="#privacidad">Política de Privacidad</a></span>
+      </label>
+
+      <p class="form-message" id="form-message" aria-live="polite"></p>
+      <button class="submit-button" type="submit">CREAR CUENTA <span aria-hidden="true">→</span></button>
+      <p class="login-prompt">¿Ya tienes una cuenta? <a href="#iniciar-sesion">INICIAR SESIÓN</a></p>
+    </form>
+  </main>
+
+</body>
+</html>
